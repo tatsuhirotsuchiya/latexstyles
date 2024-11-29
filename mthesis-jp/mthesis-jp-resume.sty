@@ -1,0 +1,45 @@
+\usepackage[dvipdfmx]{graphicx}%
+%\usepackage{Here}
+\usepackage{comment}
+\usepackage{amsmath,amssymb}
+
+\usepackage{splitbib}
+
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+
+
+\usepackage[top=20truemm,bottom=5truemm,left=10truemm,right=10truemm]{geometry}
+\setlength{\headheight}{5mm}
+\setlength{\headsep}{5mm}
+
+\usepackage[compact,small]{titlesec}
+
+\newcommand{\maketop}[3]{%
+  \twocolumn[%
+    \centering
+    \textbf{\large{#1}}\\
+    \large{{#2} (ディペンダビリティ工学講座)}
+    \vspace{5mm}
+  ]
+  \thispagestyle{fancy}
+  \lhead{大阪大学大学院情報科学研究科情報システム工学専攻博士前期課程修士学位論文発表会資料}
+  \rhead{#3}
+  \cfoot{}
+}
+
+\newcommand{\bibcategory}[2]{%
+  \renewcommand{\refname}{}
+  \SBtitlestyle{none}
+  \SBsubtitlestyle{node}
+  \vspace{-11pt}
+  \begin{category}{文献リスト}
+    \begin{category}{\hspace{-15pt}\large{\textbf{参考文献}}\vspace{5pt}}
+      \SBentries{#1}
+    \end{category}
+    \vspace{-9pt}
+    \begin{category}{\hspace{-15pt}\large{\textbf{関連発表論文}}\vspace{5pt}}
+      \SBentries{#2}
+    \end{category}
+  \end{category}
+}

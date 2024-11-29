@@ -1,0 +1,97 @@
+%-----------------------------------------------
+%This is a basic template of the graduate thesis
+%for student who are at Dependability Engineering Laboratory.
+%
+% created by Hideharu Kojima
+%-----------------------------------------------
+\documentclass[11pt,a4]{report}
+\usepackage{mthesis-en}%use masters-thesis.sty for using layout for the thesis
+\usepackage[dvipdfmx]{graphicx}%
+%\usepackage{Here}
+\usepackage{comment}
+\usepackage{amsmath,amssymb}
+
+\renewcommand{\baselinestretch}{1.3}%
+\setcounter{tocdepth}{3}
+
+\thesisauthor{Author name}%
+\affiliation{Graduate School of Information Science and Technology, Osaka University}%
+\thesistitle{thesis title in English}%
+\submissiondate{2022 Jan. 28}%
+\supervisor{Prof. Tatsuhiro Tsuchiya}%
+
+\abstcontents{
+  \indent{
+English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract.
+  }\\\indent{
+English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract.
+  }\\\indent{
+English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract English abstract.
+}}
+\keywords{English word 1, English word 2, English word 3, English word 4}
+
+%\maketitle
+
+\begin{document}
+%\makepreambles generate a title page, abstract pages and index pages.
+\makepreambles
+\chapter{Start thesis}
+\section{what is that}
+
+
+\subsection{how is that}
+if you have to include a figure,
+you use description below.
+\begin{verbatim}
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[scale=0.45]{images/image.eps}
+\caption{caption of this figure}
+\label{fig:modeling_topology}
+\end{center}
+\end{figure}
+\end{verbatim}
+Plain text.
+
+
+\subsection{Another subtitle}
+when you show Table\ref{tbl:table1},
+you have to describe following lines.
+\begin{verbatim}
+\begin{table}[htb]
+\begin{center}
+\caption{test table}
+\label{tbl:table1}
+\begin{tabular}{|c|l|}\hline
+(a)&1\\\hline
+(b)&2\\\hline
+(c)&3\\\hline
+(d)&4\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{verbatim}
+\begin{table}[htb]
+\begin{center}
+\caption{example of a table}
+\label{tbl:table1}
+\begin{tabular}{|c|l|}\hline
+(a)&where is that\cite{ndss_2020}\\\hline
+(b)&when is that\\\hline
+(c)&why is that\\\hline
+(d)&what is that\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+More plain text.
+
+\acknowledgement%
+this is the area for describing acknowledgement.
+%\begin{bibliography}
+
+
+%\end{bibliography}
+
+\bibliographystyle{IEEEtran}
+\bibliography{bibsample.bib}
+\end{document}

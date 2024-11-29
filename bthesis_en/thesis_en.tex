@@ -1,0 +1,99 @@
+%-----------------------------------------------
+%This is a basic template of the graduate thesis
+%for student who are at Dependability Engineering Laboratory.
+%
+% created by Hideharu Kojima
+%-----------------------------------------------
+
+\documentclass[11pt,a4j]{report}
+\usepackage{thesis_en}%use thesis.sty for using layout for the thesis
+\usepackage{graphicx}%
+\usepackage{Here}
+  
+\renewcommand{\baselinestretch}{1.3}%
+
+\thesisauthor{Hideharu Kojima}%
+\affiliation{School of Engineering Science, Osaka University}%
+\thesistitle{A Study of something for the Bachelor's Thesis}%
+\supervisor{Tatsuhiro Tsuchiya}%
+\submissiondate{2022}{1}{27}
+
+\abstcontents{
+    abstract, abstract, abstract, abstract, abstract, abstract, abstract, abstract,
+    abstract, abstract, abstract, abstract, abstract, abstract, abstract, abstract,
+    abstract, abstract, abstract, abstract, abstract, abstract, abstract, abstract,
+    abstract, abstract, abstract, abstract, abstract, abstract, abstract, abstract,
+    abstract, abstract, abstract, abstract, abstract, abstract, abstract, abstract,
+    abstract, abstract, abstract, abstract, abstract, abstract, abstract, abstract,
+    abstract, abstract, abstract, abstract, abstract, abstract, abstract, abstract,
+}
+\keywords{keyword1, keyword2, keyword3}
+
+
+%\maketitle
+
+\begin{document}
+%\makepreambles generate a title page, abstract pages and index pages.
+\makepreambles
+
+\chapter{Intoroduction}
+\section{Something else}
+
+
+\subsection{subsection something}
+Figure
+\begin{verbatim}
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.45]{images/image.eps}
+\caption{Figure Example}
+\label{fig:modeling_topology}
+\end{center}
+\end{figure}
+\end{verbatim}
+Plain text.
+
+
+\subsection{Another subtitle}
+Table~\ref{tbl:table1} is 
+\begin{verbatim}
+\begin{table}[H]This option candidates are [Hhtb], [H] needs here.sty.
+\begin{center}
+\caption{Table name}
+\label{tbl:table1}
+\begin{tabular}{|c|l|}\hline
+(a)&sample1\\\hline
+(b)&sample2\\\hline
+(c)&sample3\\\hline
+(d)&sample4\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+\end{verbatim}
+\begin{table}[H]
+\begin{center}
+\caption{Table Example}
+\label{tbl:table1}
+\begin{tabular}{|c|l|}\hline
+(a)&sample1\cite{AODV}\\\hline
+(b)&sample2\cite{DSR}\\\hline
+(c)&sample3\cite{OLSR}\\\hline
+(d)&sample4\cite{mycom}\cite{ISSTA1994}\\\hline
+\end{tabular}
+\end{center}
+\end{table}
+More plain text\cite{ICTE2007}.
+
+
+
+\acknowledgement%
+acknowledgement
+%\begin{bibliography}
+
+
+
+%\end{bibliography}
+
+\bibliographystyle{IEEEtran}
+\bibliography{bibsample_en.bib}
+\end{document}

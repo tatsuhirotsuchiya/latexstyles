@@ -1,0 +1,42 @@
+\usepackage[dvipdfmx]{graphicx}%
+%\usepackage{Here}
+\usepackage{comment}
+\usepackage{amsmath,amssymb}
+\usepackage{splitbib}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+
+\usepackage[top=20truemm,bottom=5truemm,left=10truemm,right=10truemm]{geometry}
+\setlength{\headheight}{5mm}
+\setlength{\headsep}{5mm}
+
+\usepackage[compact,small]{titlesec}
+
+\newcommand{\maketop}[3]{%
+  \twocolumn[%
+    \centering
+    \textbf{\large{#1}}\\
+    \large{{#2} (Dependability Engineering Lab.)}
+    \vspace{5mm}
+  ]
+  \thispagestyle{fancy}
+  \lhead{Master's thesis presentation, Graduate School of Information Science and Technology, Osaka University}
+  \rhead{#3}
+  \cfoot{}
+}
+
+\newcommand{\bibcategory}[2]{%
+  \renewcommand{\refname}{}
+  \SBtitlestyle{none}
+  \SBsubtitlestyle{node}
+  \vspace{-11pt}
+  \begin{category}{papers}
+    \begin{category}{\hspace{-15pt}\large{\textbf{Reference}}\vspace{5pt}}
+      \SBentries{#1}
+    \end{category}
+    \vspace{-9pt}
+    \begin{category}{\hspace{-15pt}\large{\textbf{Published Paper}}\vspace{5pt}}
+      \SBentries{#2}
+    \end{category}
+  \end{category}
+}
